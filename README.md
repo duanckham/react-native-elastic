@@ -14,9 +14,15 @@ Usage
 import Elastic from 'react-native-elastic';
 
 ...
-const styles = StyleSheet.create(Elastic.create({
+// Return a StyleSheet object
+const styles = Elastic.create({
     ...
-}));
+});
+
+// Just scale the style value
+const styles = Elastic.repair({
+    ...
+});
 ```
 
 Scaling
